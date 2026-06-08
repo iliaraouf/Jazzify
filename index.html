@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jazzify — Jazz Music, History & Artists</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NOISE OVERLAY ===== -->
+  <div class="noise-overlay"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">🎷 Jazzify</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#news">News</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-circle c1"></div>
+      <div class="hero-circle c2"></div>
+      <div class="hero-circle c3"></div>
+      <div class="staff-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-label">Est. 1900s · New Orleans</div>
+      <h1 class="hero-title">
+        <span class="word w1">Jazz</span><span class="word w2 italic">ify</span>
+      </h1>
+      <p class="hero-desc">A place for Jazz music, history, artists and news</p>
+      <div class="hero-cta">
+        <a href="#music" class="btn btn-gold">▶ Play Now</a>
+        <a href="#history" class="btn btn-outline">Explore History</a>
+      </div>
+    </div>
+    <div class="hero-sax">
+      <div class="sax-svg">🎷</div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section id="news" class="section news-section">
+    <div class="section-header">
+      <span class="section-tag">Latest</span>
+      <h2 class="section-title">Jazz News</h2>
+      <p class="section-sub">Stay tuned with what's happening in the jazz world</p>
+    </div>
+    <div class="news-grid" id="newsGrid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ===== HISTORY ===== -->
+  <section id="history" class="section history-section">
+    <div class="section-header">
+      <span class="section-tag">Timeline</span>
+      <h2 class="section-title">Jazz History</h2>
+      <p class="section-sub">A journey through the decades that shaped the sound</p>
+    </div>
+    <div class="history-timeline">
+
+      <div class="timeline-item" data-era="Origins">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">1890s – 1910s</div>
+        <div class="timeline-card">
+          <div class="timeline-img">🌿</div>
+          <h3>Origins of Jazz</h3>
+          <p>Jazz was born in New Orleans at the turn of the 20th century — a vibrant fusion of African rhythms, blues, ragtime, and European harmonic traditions. The city's unique cultural melting pot, with its Creole population, African heritage, and European influence, provided the perfect cradle for this revolutionary sound.</p>
+          <p>Congo Square became a gathering place where African musical traditions survived and evolved. Street bands, funeral processions, and the legendary Storyville district all contributed to jazz's earliest form.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reverse" data-era="Swing">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">1930s – 1940s</div>
+        <div class="timeline-card">
+          <div class="timeline-img">🎺</div>
+          <h3>The Swing Era</h3>
+          <p>The 1930s brought jazz to mainstream America. Big bands led by Duke Ellington, Benny Goodman, and Count Basie filled dance halls and ballrooms. Swing's infectious rhythm had the entire nation on its feet — it was the popular music of its time.</p>
+          <p>Radio broadcasts carried jazz into millions of homes, and bandleaders became national celebrities. The genre reached its commercial peak, with elaborate arrangements and showmanship defining the era.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-era="Bebop">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">1940s – 1950s</div>
+        <div class="timeline-card">
+          <div class="timeline-img">🎵</div>
+          <h3>Bebop Revolution</h3>
+          <p>Bebop was jazz's intellectual rebellion. Played at breakneck tempos with complex chord progressions, bebop was music for musicians. Charlie "Bird" Parker and Dizzy Gillespie pioneered this movement, along with Thelonious Monk's angular piano harmonics.</p>
+          <p>Bebop shifted jazz from dance music to concert music — an art form demanding deep listening. Its influence reshaped every jazz style that followed, establishing improvisation as the supreme expression of musical identity.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reverse" data-era="Cool">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">1950s – 1960s</div>
+        <div class="timeline-card">
+          <div class="timeline-img">🌙</div>
+          <h3>Cool & Hard Bop</h3>
+          <p>As a reaction to bebop's intensity, cool jazz emerged with a relaxed, cerebral tone. Miles Davis's landmark album <em>Kind of Blue</em> (1959) became the best-selling jazz album of all time, introducing modal jazz to the world.</p>
+          <p>Simultaneously, hard bop rooted jazz back in blues and gospel traditions — Art Blakey and the Jazz Messengers became its emblem. John Coltrane bridged both worlds with his sheets of sound approach.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-era="Modern">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">1970s – Present</div>
+        <div class="timeline-card">
+          <div class="timeline-img">⚡</div>
+          <h3>Modern Jazz</h3>
+          <p>From fusion to free jazz, the modern era knows no boundaries. Herbie Hancock and Weather Report merged jazz with rock and electronic sounds. The 1980s and 90s saw a neo-traditionalist movement led by Wynton Marsalis, reclaiming acoustic jazz.</p>
+          <p>Today, artists like Kamasi Washington, Robert Glasper, and Esperanza Spalding blend jazz with hip-hop, soul, and electronic music — proving jazz remains a living, evolving force in global culture.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ARTISTS ===== -->
+  <section id="artists" class="section artists-section">
+    <div class="section-header">
+      <span class="section-tag">Legends</span>
+      <h2 class="section-title">Famous Artists</h2>
+      <p class="section-sub">The icons who defined the genre</p>
+    </div>
+    <div class="artists-grid" id="artistsGrid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ===== MUSIC ===== -->
+  <section id="music" class="section music-section">
+    <div class="section-header">
+      <span class="section-tag">Listen</span>
+      <h2 class="section-title">Jazz Music</h2>
+      <p class="section-sub">Timeless tracks from the masters</p>
+    </div>
+    <div class="music-player-wrapper">
+      <div class="now-playing" id="nowPlaying">
+        <div class="np-vinyl" id="npVinyl">
+          <div class="vinyl-inner">🎵</div>
+        </div>
+        <div class="np-info">
+          <div class="np-label">Now Playing</div>
+          <div class="np-title" id="npTitle">Select a track</div>
+          <div class="np-artist" id="npArtist">—</div>
+        </div>
+      </div>
+      <div class="tracks-list" id="tracksList">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="section-tag">About</span>
+        <h2 class="section-title">About Jazzify</h2>
+        <p>Jazzify is a digital home for jazz lovers, historians, and newcomers alike. We celebrate the rich legacy of jazz music — its roots, its evolution, and its enduring influence on music and culture worldwide.</p>
+        <p>Whether you're discovering Coltrane for the first time or revisiting Miles Davis's classic recordings, Jazzify brings together news, history, and the sounds that changed the world.</p>
+        <div class="social-links">
+          <a href="https://t.me/jazziify" class="social-btn telegram" aria-label="Telegram">
+            <span class="social-icon">✈</span>
+            <span>Telegram</span>
+          </a>
+          <a href="#" class="social-btn instagram" aria-label="Instagram">
+            <span class="social-icon">📷</span>
+            <span>Instagram</span>
+          </a>
+          <a href="#" class="social-btn youtube" aria-label="YouTube">
+            <span class="social-icon">▶</span>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-record">
+          <div class="record-outer">
+            <div class="record-mid">
+              <div class="record-center">🎷</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">🎷 Jazzify</div>
+      <p class="footer-quote">"Jazz is not just music, it's life." — iliaraouf</p>
+      <p class="footer-copy">© 2025 Jazzify. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
